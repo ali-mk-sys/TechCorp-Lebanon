@@ -74,6 +74,23 @@ Every stage was built, verified with show commands and pings, and documented wit
 
 Each `stageXX` folder contains that stage's `.pkt` snapshot and its screenshots.
 
+### Key screenshots
+
+| What it proves | Screenshot |
+|---|---|
+| Trunks carry only the needed VLANs | [stage01/stage1_trunk_core.png](stage01/stage1_trunk_core.png) |
+| Routed between VLANs (TTL 127) | [stage02/stage2_ping_hr1_fin1.png](stage02/stage2_ping_hr1_fin1.png) |
+| DHCP leases per VLAN | [stage03/stage3_dhcp_binding_core.png](stage03/stage3_dhcp_binding_core.png) |
+| Many hosts behind one public IP (PAT) | [stage04/stage4_nat_translations.png](stage04/stage4_nat_translations.png) |
+| ISP has no private routes | [stage04/stage4_ip_route_isp.png](stage04/stage4_ip_route_isp.png) |
+| Guest ACL match counters | [stage05/stage5_acl_counters.png](stage05/stage5_acl_counters.png) |
+| OSPF replaced static routes | [stage06/stage6_route_edge_after.png](stage06/stage6_route_edge_after.png) |
+| SSH works, Telnet refused | [stage07/stage7_ssh_core_success.png](stage07/stage7_ssh_core_success.png) · [stage07/stage7_telnet_refused.png](stage07/stage7_telnet_refused.png) |
+| Rogue device caught by port security | [stage08/stage8_rogue_errdisabled.png](stage08/stage8_rogue_errdisabled.png) |
+| Central syslog from every device | [stage09/stage9_syslog.png](stage09/stage9_syslog.png) |
+| SNMP polling from the NOC server | [stage09/stage9_snmp_sysname.png](stage09/stage9_snmp_sysname.png) |
+| Ticket 2 detected in syslog | [stage10/ticket2/stage10_t2_syslog_ospf_down.png](stage10/ticket2/stage10_t2_syslog_ospf_down.png) |
+
 ---
 
 ## Troubleshooting tickets (Stage 10)
